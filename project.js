@@ -64,30 +64,13 @@ const quotes = [
 function randomMessageGen(){
     let randomNum= Math.floor(Math.random()*10);
 
-    switch(randomNum){
-        case 1: console.log(`${quotes[0].text} Author: ${quotes[0].author} Ispirational? ${quotes[0].isInspirational}`);
-        break;
-        case 2: console.log(`${quotes[1].text} Author: ${quotes[1].author} Ispirational? ${quotes[1].isInspirational}`);
-        break;
-        case 3: console.log(`${quotes[2].text} Author: ${quotes[2].author} Ispirational? ${quotes[2].isInspirational}`);
-        break;
-        case 4: console.log(`${quotes[3].text} Author: ${quotes[3].author} Ispirational? ${quotes[3].isInspirational}`);
-        break;
-        case 5: console.log(`${quotes[4].text} Author: ${quotes[4].author} Ispirational? ${quotes[4].isInspirational}`);
-        break;
-        case 6: console.log(`${quotes[5].text} Author: ${quotes[5].author} Ispirational? ${quotes[5].isInspirational}`);
-        break;
-        case 7: console.log(`${quotes[6].text} Author: ${quotes[6].author} Ispirational? ${quotes[6].isInspirational}`);
-        break;
-        case 8: console.log(`${quotes[7].text} Author: ${quotes[7].author} Ispirational? ${quotes[7].isInspirational}`);
-        break;
-        case 9: console.log(`${quotes[8].text} Author: ${quotes[8].author} Ispirational? ${quotes[8].isInspirational}`);
-        break; 
-        case 10: console.log(`${quotes[9].text} Author: ${quotes[9].author} Ispirational? ${quotes[9].isInspirational}`);
-        break;
-        default: console.log('There was an error');
-        break;
+    for(let i=0; i<quotes.length; i++){
+        if(i=== randomNum){
+            console.log(`${quotes[i].text} Author: ${quotes[i].author} Ispirational? ${quotes[i].isInspirational}`);
+        }
     }
+
+    
 }
 
 randomMessageGen();
